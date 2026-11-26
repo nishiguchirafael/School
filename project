@@ -1,0 +1,16 @@
+print("Today, i will help you to let you know the hour you should eat. Wouldn't be amazing if you could be warned about the time you must food yourself?")
+hour = input("What time is it?")
+hora, minuto = map(int, hour.split(":"))
+if (hour == 7) or (hora == 8 and minuto == 0):
+    print("breakfast")
+elif (hour == 12)  or (hora == 13 and minuto ==0):
+    print("lunch")
+elif (hour == 18) or (hora == 19 and minuto==0):
+    print("dinner")
+else:
+    print("the time isn't now.")
+
+#if hour equals 7 - 8:00, print breakfast
+#elif hour equals 12-13:00, print lunch
+#elif hour equals 18-19:00, print dinner
+#hora equals int, whereas minuto is hour.split in which if there is one, this is already the minute's part, wherein doesn't count no more as an hour
